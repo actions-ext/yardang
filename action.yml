@@ -34,6 +34,8 @@ runs:
           "**/setup.py"
     - run: pip install ${{ inputs.install_path }}
       shell: bash
+    - run: pip install yardang
+      shell: bash
     - run: yardang build
       shell: bash
     - uses: peaceiris/actions-gh-pages@v4
