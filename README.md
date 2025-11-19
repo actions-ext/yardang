@@ -9,7 +9,6 @@ on:
   push:
     branches: ["main"]
     tags: ["v*"]
-    paths-ignore: ["LICENSE", "README.md"]
 
 permissions:
     contents: write
