@@ -1,7 +1,7 @@
 # yardang
 [yardang](https://github.com/python-project-templates/yardang) documentation builder action.
 
-## `.github/workflows/docs.yml`:
+## `.github/workflows/docs.yaml`:
 
 ```yaml
 name: Docs
@@ -9,7 +9,6 @@ on:
   push:
     branches: ["main"]
     tags: ["v*"]
-    paths-ignore: ["LICENSE", "README.md"]
 
 permissions:
     contents: write
