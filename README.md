@@ -1,7 +1,7 @@
 # yardang
 [yardang](https://github.com/python-project-templates/yardang) documentation builder action.
 
-## `.github/workflows/docs.yml`:
+## `.github/workflows/docs.yaml`:
 
 ```yaml
 name: Docs
