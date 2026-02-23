@@ -36,7 +36,7 @@ runs:
       shell: bash
     - run: pip install ${{ inputs.install_path }}
       shell: bash
-    - run: uv pip install "yardang[breathe,rust,js,wiki]>=0.5.1"
+    - run: uv pip install "yardang[breathe,rust,js,wiki]>=0.5.1" --system
       shell: bash
     - run: yardang build
       shell: bash
