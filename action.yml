@@ -34,7 +34,7 @@ runs:
           "**/setup.py"
     - run: pip install ${{ inputs.install_path }}
       shell: bash
-    - run: pip install yardang>=0.5.1[breathe,rust,js,wiki]
+    - run: pip install "yardang>=0.5.1[breathe,rust,js,wiki]"
       shell: bash
     - run: yardang build
       shell: bash
