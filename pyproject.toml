@@ -1,0 +1,21 @@
+# Minimal project metadata so CI can run this action against this repo and
+# confirm that yardang builds documentation. Nothing here is published.
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yardang-action"
+version = "0.0.0"
+description = "Build and deploy Sphinx documentation with Yardang"
+requires-python = ">=3.9"
+
+[tool.setuptools]
+py-modules = []
+
+[tool.yardang]
+title = "yardang-action"
+root = "README.md"
+pages = []
+use-autoapi = false

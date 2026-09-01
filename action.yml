@@ -20,6 +20,11 @@ inputs:
     type: string
     description: "Path to project to install"
     default: '.'
+  publish:
+    type: boolean
+    description: "Publish the built documentation to gh-pages"
+    required: false
+    default: true
 
 runs:
   using: 'composite'
@@ -41,6 +46,7 @@ runs:
     - run: yardang build
       shell: bash
     - uses: peaceiris/actions-gh-pages@84c30a85c19949d7eee79c4ff27748b70285e453 # v4.1.0
+      if: ${{ inputs.publish == 'true' }}
       with:
         publish_branch: gh-pages
         github_token: ${{ inputs.token }}
